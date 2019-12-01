@@ -6,7 +6,7 @@ fluidPage(
     # Sidebar with a slider and selection inputs
     sidebarPanel(
      
-      selectInput("selectedSerial","Select Serial Port:", c("ttyAMA0","ttyACM0")),
+      selectInput("selectedSerial","Select Board:", c()),
       radioButtons("direction", "Direction:", c("Right" = "right","Left" = "left")),
       sliderInput("speed","Choose Speed :",min = 1,  max = 50, value = 15),
       hr()
